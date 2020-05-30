@@ -1,0 +1,16 @@
+@import '~antd/dist/antd.css';
+
+@font-face {
+    font-family: handwritten;
+    src: url(./assets/fonts/Schoolbell.ttf);
+}
+
+html,
+body {
+    font-family: handwritten;
+    height: 80%;
+}
+
+.ant-table-cell {
+    text-align: right !important;
+}

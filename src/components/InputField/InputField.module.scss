@@ -1,0 +1,17 @@
+$color: palegreen;
+
+.customInput {
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+    width: 250px;
+}
+
+.readOnly {
+    background-color: $color;
+}
+
+.readOnly > input {
+    background-color: $color;
+}
