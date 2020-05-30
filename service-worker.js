@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/moneybags/precache-manifest.50847802d818b62f7e5c77fcf13396a1.js"
+  "/moneybags/precache-manifest.16ab66b7ad92db2dbee64308c8eee153.js"
 );
 
 self.addEventListener('message', (event) => {

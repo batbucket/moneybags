@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e344b76765c6dee491e3cfc419ebae9f",
+    "revision": "3475a043bc233283271600ca8fb2b4f6",
     "url": "/moneybags/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/moneybags/static/css/2.63b65d4e.chunk.css"
   },
   {
-    "revision": "86ff7d51b97fa2773ff1",
+    "revision": "564f487f01a9d50db17f",
     "url": "/moneybags/static/css/main.572e45ed.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/moneybags/static/js/2.dff8dd4f.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "86ff7d51b97fa2773ff1",
-    "url": "/moneybags/static/js/main.670aa4c9.chunk.js"
+    "revision": "564f487f01a9d50db17f",
+    "url": "/moneybags/static/js/main.731e46cd.chunk.js"
   },
   {
     "revision": "6d0d1931dbf270883c2f",
