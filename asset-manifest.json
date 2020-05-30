@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/moneybags/static/css/main.f74926fd.chunk.css",
-    "main.js": "/moneybags/static/js/main.7136576d.chunk.js",
-    "main.js.map": "/moneybags/static/js/main.7136576d.chunk.js.map",
+    "main.css": "/moneybags/static/css/main.572e45ed.chunk.css",
+    "main.js": "/moneybags/static/js/main.314d6835.chunk.js",
+    "main.js.map": "/moneybags/static/js/main.314d6835.chunk.js.map",
     "runtime-main.js": "/moneybags/static/js/runtime-main.d1869807.js",
     "runtime-main.js.map": "/moneybags/static/js/runtime-main.d1869807.js.map",
     "static/css/2.63b65d4e.chunk.css": "/moneybags/static/css/2.63b65d4e.chunk.css",
     "static/js/2.dff8dd4f.chunk.js": "/moneybags/static/js/2.dff8dd4f.chunk.js",
     "static/js/2.dff8dd4f.chunk.js.map": "/moneybags/static/js/2.dff8dd4f.chunk.js.map",
     "index.html": "/moneybags/index.html",
-    "precache-manifest.37d58cb0c192ffc8fec609bac3cc4db5.js": "/moneybags/precache-manifest.37d58cb0c192ffc8fec609bac3cc4db5.js",
+    "precache-manifest.a3c493643cb21c7d384aa073c2b512e0.js": "/moneybags/precache-manifest.a3c493643cb21c7d384aa073c2b512e0.js",
     "service-worker.js": "/moneybags/service-worker.js",
     "static/css/2.63b65d4e.chunk.css.map": "/moneybags/static/css/2.63b65d4e.chunk.css.map",
-    "static/css/main.f74926fd.chunk.css.map": "/moneybags/static/css/main.f74926fd.chunk.css.map",
+    "static/css/main.572e45ed.chunk.css.map": "/moneybags/static/css/main.572e45ed.chunk.css.map",
     "static/js/2.dff8dd4f.chunk.js.LICENSE.txt": "/moneybags/static/js/2.dff8dd4f.chunk.js.LICENSE.txt",
     "static/media/App.css": "/moneybags/static/media/Schoolbell.b42e4e53.ttf"
   },
@@ -20,7 +20,7 @@
     "static/js/runtime-main.d1869807.js",
     "static/css/2.63b65d4e.chunk.css",
     "static/js/2.dff8dd4f.chunk.js",
-    "static/css/main.f74926fd.chunk.css",
-    "static/js/main.7136576d.chunk.js"
+    "static/css/main.572e45ed.chunk.css",
+    "static/js/main.314d6835.chunk.js"
   ]
 }
