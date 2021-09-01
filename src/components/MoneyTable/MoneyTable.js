@@ -1,6 +1,6 @@
 import { Table } from 'antd'
-import React, { useState } from 'react'
-import styles from './MoneyTable.module.scss'
+import React from 'react'
+import styles from './MoneyTable.module.css'
 
 function MoneyTable(props) {
     return (

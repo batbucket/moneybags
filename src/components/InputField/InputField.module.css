@@ -1,5 +1,3 @@
-$color: palegreen;
-
 .customInput {
     border-top-style: hidden;
     border-right-style: hidden;
@@ -9,9 +7,9 @@ $color: palegreen;
 }
 
 .readOnly {
-    background-color: $color;
+    background-color: palegreen;
 }
 
 .readOnly > input {
-    background-color: $color;
+    background-color: palegreen;
 }

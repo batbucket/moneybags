@@ -1,7 +1,7 @@
 import { Input } from 'antd'
 
-import React, { useState } from 'react'
-import styles from './InputField.module.scss'
+import React from 'react'
+import styles from './InputField.module.css'
 
 function InputField(props) {
     return (

@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Typography, Progress } from 'antd'
 import './App.css'
-import styles from './App.module.scss'
+import styles from './App.module.css'
 import InputField from './components/InputField/InputField'
 import MoneyTable from './components/MoneyTable/MoneyTable'
 
@@ -24,10 +24,11 @@ function App() {
     let modYears = 0
 
     const targetNetWorth = income / swrPercent
-
+    let netWorth = start
+    let prevNetWorth = 0
     for (let i = 0; i < 100 && !isRetired; i++) {
-        const netWorth = getNetWorthAtYear(i) + parseInt(start)
-        const prevNetWorth = getNetWorthAtYear(i - 1) + parseInt(start)
+        prevNetWorth = netWorth
+        netWorth += netWorth * annualReturnPercent + savings
 
         const safeWithdrawalAmount = netWorth * swrPercent
         const interest = prevNetWorth * annualReturnPercent
@@ -62,11 +63,6 @@ function App() {
         setYears(modYears)
     }
 
-    function getNetWorthAtYear(year) {
-        const annual = annualReturnPercent + 1
-        return (savings * (Math.pow(annual, year + 1) - 1)) / (annual - 1)
-    }
-
     function convertToMoney(money, isColor) {
         const isPositive = money >= 0
 
@@ -97,7 +93,7 @@ function App() {
             <div className={styles.centerContainer}>
                 <InputField
                     prefix={'$'}
-                    suffix="initial savings"
+                    suffix='initial savings'
                     value={start}
                     onChange={setStart}
                 />
@@ -105,7 +101,7 @@ function App() {
             <div className={styles.centerContainer}>
                 <InputField
                     prefix={'$'}
-                    suffix="yearly savings"
+                    suffix='yearly savings'
                     value={savings}
                     onChange={setSavings}
                 />
@@ -113,21 +109,21 @@ function App() {
             <div className={styles.centerContainer}>
                 <InputField
                     prefix={'$'}
-                    suffix="desired yearly income"
+                    suffix='desired yearly income'
                     value={income}
                     onChange={setIncome}
                 />
             </div>
             <div className={styles.centerContainer}>
                 <InputField
-                    suffix="% safe withdrawal"
+                    suffix='% safe withdrawal'
                     value={swr}
                     onChange={setSwr}
                 />
             </div>
             <div className={styles.centerContainer}>
                 <InputField
-                    suffix="% annual return"
+                    suffix='% annual return'
                     value={annualReturn}
                     onChange={setAnnualReturn}
                 />
@@ -135,7 +131,7 @@ function App() {
             <div className={styles.centerContainer}>
                 <InputField
                     readOnly={true}
-                    suffix="years to retirement"
+                    suffix='years to retirement'
                     value={years}
                     onChange={setYears}
                 />
