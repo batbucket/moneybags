@@ -17,6 +17,10 @@ function App() {
 
     const data = []
 
+    if (parseInt(swr) > parseInt(annualReturn)) {
+        setSwr(annualReturn)
+    }
+
     const annualReturnPercent = annualReturn * 0.01
     const swrPercent = swr * 0.01
 
@@ -35,7 +39,7 @@ function App() {
         const difference = convertToMoney(netWorth - prevNetWorth, true)
         const progress = (
             <Progress
-                percent={Math.round((safeWithdrawalAmount / income) * 100)}
+                percent={Math.floor((safeWithdrawalAmount / income) * 100)}
                 width={30}
             />
         )
@@ -109,7 +113,7 @@ function App() {
             <div className={styles.centerContainer}>
                 <InputField
                     prefix={'$'}
-                    suffix='desired yearly income'
+                    suffix='yearly retirement expenses'
                     value={income}
                     onChange={setIncome}
                 />
