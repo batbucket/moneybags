@@ -18,7 +18,7 @@ function App() {
     const data = []
 
     if (parseInt(swr) > parseInt(annualReturn)) {
-        setSwr(annualReturn)
+        setSwr(parseInt(annualReturn))
     }
 
     const annualReturnPercent = annualReturn * 0.01
@@ -32,6 +32,8 @@ function App() {
     let prevNetWorth = 0
     for (let i = 0; i < 100 && !isRetired; i++) {
         prevNetWorth = netWorth
+
+        console.log(netWorth, annualReturnPercent, savings)
         netWorth += netWorth * annualReturnPercent + savings
 
         const safeWithdrawalAmount = netWorth * swrPercent

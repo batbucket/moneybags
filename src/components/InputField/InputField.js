@@ -15,7 +15,7 @@ function InputField(props) {
             value={props.value}
             readOnly={props.readOnly}
             type={'number'}
-            onChange={(e) => props.onChange(e.target.value)}
+            onChange={(e) => props.onChange(parseInt(e.target.value))}
         />
     )
 }
